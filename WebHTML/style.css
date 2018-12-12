@@ -1,41 +1,45 @@
-.html,
+html,
 body {
-  background: red;
+  background: rgb(41, 223, 35);
   background-size: cover;
+  margin: 0px;
+  padding: 0px;
 }
 header {
-  height: 50px;
   border: 3px solid;
   background: green;
-  border-color: yellow;
 }
-.navbar {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
+nav {
   display: flex;
-  -webkit-flex-flow: row wrap;
-
-  margin: 5px;
-  padding: 5px;
-
-  list-style: none;
   justify-content: flex-end;
+  align-self: flex-end;
 }
-.navbar li {
+nav ul {
+  display: flex;
+}
+nav li {
   background: green;
   padding: 5px;
+  list-style: none;
 }
 
-.navbar li a {
+nav li a {
   border-bottom: none;
   text-decoration: none;
 }
 
 .main-content {
-  display: flex;
+  display: grid;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+footer {
+  display: flex;
+  background: rgb(151, 151, 238);
+  text-align: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
