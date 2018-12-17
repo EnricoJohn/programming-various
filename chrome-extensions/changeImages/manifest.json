@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Change Images",
+  "version": "0.1",
+  "web_accessible_resources": ["images/*.jpg"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["changeImages.js"]
+    }
+  ]
+}
